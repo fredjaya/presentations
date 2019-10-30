@@ -1,0 +1,284 @@
+IQ-TREE multicore version 1.6.11 for Linux 64-bit built Jun  6 2019
+Developed by Bui Quang Minh, Nguyen Lam Tung, Olga Chernomor,
+Heiko Schmidt, Dominik Schrempf, Michael Woodhams.
+
+Host:    jordan (SSE4.2, 11 GB RAM)
+Command: ../../iqtree -s cholera_haiti.fasta -m TEST -bb 1000 -alrt 1000
+Seed:    46753 (Using SPRNG - Scalable Parallel Random Number Generator)
+Time:    Mon Aug  5 10:04:00 2019
+Kernel:  SSE2 - 1 threads (8 CPU cores detected)
+
+HINT: Use -nt option to specify number of threads because your CPU has 8 cores!
+HINT: -nt AUTO will automatically determine the best number of threads to use.
+
+Reading alignment file cholera_haiti.fasta ... Fasta format detected
+Alignment most likely contains DNA/RNA sequences
+Alignment has 34 sequences with 752 columns, 154 distinct patterns
+184 parsimony-informative, 568 singleton sites, 0 constant sites
+                Gap/Ambiguity  Composition  p-value
+   1  INDRE911          0.00%    passed     40.72%
+   2  16961             0.00%    passed     16.99%
+   3  RC9               0.00%    passed     52.35%
+   4  MO10              0.00%    passed     53.66%
+   5  MJ1236            0.00%    passed     94.27%
+   6  B33               0.00%    passed     13.52%
+   7  Bangla_CIRS101    0.00%    passed     98.34%
+   8  Nepal_6           0.00%    passed     50.14%
+   9  Nepal_19          0.00%    passed     45.23%
+  10  Nepal_18          0.00%    passed     61.86%
+  11  Nepal_15          0.00%    passed     65.76%
+  12  Haiti_1798        0.00%    passed     80.24%
+  13  Haiti_1786        0.00%    passed     80.24%
+  14  Haiti_1792        0.00%    passed     80.24%
+  15  Nepal_25          0.00%    passed     74.97%
+  16  Nepal_14          0.00%    passed     69.28%
+  17  Nepal_26          0.00%    passed     77.89%
+  18  Nepal_4           0.00%    passed     94.71%
+  19  Nepal_3           0.00%    passed     92.80%
+  20  Nepal_22          0.00%    passed     95.56%
+  21  Nepal_11          0.00%    passed     92.80%
+  22  Nepal_10          0.00%    passed     94.71%
+  23  Nepal_1           0.00%    passed     94.71%
+  24  Nepal_8           0.00%    passed     94.71%
+  25  Nepal_5           0.00%    passed     94.71%
+  26  Nepal_2           0.00%    passed     94.71%
+  27  Nepal_12          0.00%    passed     94.71%
+  28  Nepal_7           0.00%    passed     94.71%
+  29  Nepal_13          0.00%    passed     94.71%
+  30  Nepal_21          0.00%    passed     94.71%
+  31  Nepal_9           0.00%    passed     94.71%
+  32  Nepal_16          0.00%    passed     94.71%
+  33  Nepal_17          0.00%    passed     94.71%
+  34  Nepal_20          0.00%    passed     94.71%
+****  TOTAL             0.00%  0 sequences failed composition chi2 test (p-value<5%; df=3)
+NOTE: Haiti_1786 is identical to Haiti_1798 but kept for subsequent analysis
+NOTE: Nepal_1 is identical to Nepal_10 but kept for subsequent analysis
+NOTE: 12 identical sequences (see below) will be ignored for subsequent analysis
+NOTE: Haiti_1792 (identical to Haiti_1798) is ignored but added at the end
+NOTE: Nepal_8 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_5 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_2 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_12 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_7 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_13 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_21 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_9 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_16 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_17 (identical to Nepal_10) is ignored but added at the end
+NOTE: Nepal_20 (identical to Nepal_10) is ignored but added at the end
+
+For your convenience alignment with unique sequences printed to cholera_haiti.fasta.uniqueseq.phy
+
+
+Create initial parsimony tree by phylogenetic likelihood library (PLL)... 0.001 seconds
+NOTE: ModelFinder requires 1 MB RAM!
+ModelFinder will test 88 DNA models (sample size: 752) ...
+ No. Model         -LnL         df  AIC          AICc         BIC
+  1  JC            4273.210     41  8628.420     8633.270     8817.952
+  2  JC+ASC        3635.731     41  7353.463     7358.314     7542.995
+  3  JC+G4         4273.503     42  8631.006     8636.100     8825.161
+  4  JC+ASC+G4     3635.563     42  7355.127     7360.221     7549.282
+  5  F81+F         4281.785     44  8651.569     8657.170     8854.969
+  6  F81+F+ASC     3646.791     44  7381.582     7387.183     7584.982
+  7  F81+F+G4      4282.076     45  8654.153     8660.017     8862.176
+  8  F81+F+ASC+G4  3646.623     45  7383.246     7389.110     7591.269
+  9  K2P           4098.746     42  8281.492     8286.586     8475.647
+ 10  K2P+ASC       3463.577     42  7011.154     7016.249     7205.309
+ 11  K2P+G4        4099.026     43  8284.051     8289.396     8482.829
+ 12  K2P+ASC+G4    3463.578     43  7013.156     7018.501     7211.934
+ 13  HKY+F         4102.882     45  8295.764     8301.628     8503.787
+ 14  HKY+F+ASC     3472.376     45  7034.751     7040.615     7242.774
+ 15  HKY+F+G4      4103.160     46  8298.319     8304.452     8510.965
+ 16  HKY+F+ASC+G4  3472.377     46  7036.753     7042.886     7249.399
+ 17  TNe           4098.251     43  8282.501     8287.846     8481.279
+ 18  TNe+ASC       3462.735     43  7011.470     7016.814     7210.247
+ 19  TNe+G4        4098.530     44  8285.060     8290.661     8488.461
+ 20  TNe+ASC+G4    3462.736     44  7013.472     7019.073     7216.872
+ 21  TN+F          4102.789     46  8297.579     8303.712     8510.224
+ 22  TN+F+ASC      3472.355     46  7036.710     7042.843     7249.356
+ 23  TN+F+G4       4103.067     47  8300.134     8306.543     8517.403
+ 24  TN+F+ASC+G4   3472.356     47  7038.712     7045.121     7255.981
+ 25  K3P           4095.553     43  8277.107     8282.451     8475.884
+ 26  K3P+ASC       3461.156     43  7008.311     7013.656     7207.089
+ 27  K3P+G4        4095.833     44  8279.665     8285.266     8483.065
+ 28  K3P+ASC+G4    3461.157     44  7010.313     7015.914     7213.714
+ 29  K3Pu+F        4098.643     46  8289.287     8295.420     8501.932
+ 30  K3Pu+F+ASC    3469.595     46  7031.190     7037.324     7243.836
+ 31  K3Pu+F+G4     4098.921     47  8291.843     8298.252     8509.111
+ 32  K3Pu+F+ASC+G4 3469.596     47  7033.192     7039.602     7250.461
+ 33  TPM2+F        4098.696     46  8289.392     8295.525     8502.038
+ 34  TPM2+F+ASC    3468.540     46  7029.080     7035.214     7241.726
+ 35  TPM2+F+G4     4098.973     47  8291.947     8298.356     8509.215
+ 36  TPM2+F+ASC+G4 3468.541     47  7031.082     7037.491     7248.351
+ 37  TPM2u+F       4098.697     46  8289.394     8295.527     8502.040
+ 38  TPM2u+F+ASC   3468.540     46  7029.080     7035.214     7241.726
+ 39  TPM2u+F+G4    4098.973     47  8291.947     8298.356     8509.215
+ 40  TPM2u+F+ASC+G4 3468.541     47  7031.082     7037.491     7248.351
+ 41  TPM3+F        4090.644     46  8273.287     8279.421     8485.933
+ 42  TPM3+F+ASC    3462.109     46  7016.217     7022.351     7228.863
+ 43  TPM3+F+G4     4090.917     47  8275.834     8282.243     8493.102
+ 44  TPM3+F+ASC+G4 3462.110     47  7018.219     7024.628     7235.488
+ 45  TPM3u+F       4090.644     46  8273.288     8279.421     8485.933
+ 46  TPM3u+F+ASC   3462.109     46  7016.217     7022.351     7228.863
+ 47  TPM3u+F+G4    4090.917     47  8275.834     8282.243     8493.102
+ 48  TPM3u+F+ASC+G4 3462.110     47  7018.219     7024.628     7235.488
+ 49  TIMe          4095.058     44  8278.116     8283.717     8481.516
+ 50  TIMe+ASC      3460.314     44  7008.628     7014.229     7212.028
+ 51  TIMe+G4       4095.337     45  8280.674     8286.538     8488.697
+ 52  TIMe+ASC+G4   3460.315     45  7010.629     7016.493     7218.653
+ 53  TIM+F         4098.549     47  8291.098     8297.507     8508.367
+ 54  TIM+F+ASC     3469.575     47  7033.150     7039.559     7250.418
+ 55  TIM+F+G4      4098.826     48  8293.652     8300.344     8515.544
+ 56  TIM+F+ASC+G4  3469.576     48  7035.151     7041.843     7257.043
+ 57  TIM2e         4095.476     44  8278.953     8284.554     8482.353
+ 58  TIM2e+ASC     3461.482     44  7010.964     7016.565     7214.364
+ 59  TIM2e+G4      4095.756     45  8281.513     8287.377     8489.536
+ 60  TIM2e+ASC+G4  3461.483     45  7012.965     7018.829     7220.989
+ 61  TIM2+F        4098.594     47  8291.187     8297.597     8508.456
+ 62  TIM2+F+ASC    3468.519     47  7031.038     7037.447     7248.307
+ 63  TIM2+F+G4     4098.870     48  8293.740     8300.431     8515.631
+ 64  TIM2+F+ASC+G4 3468.520     48  7033.040     7039.731     7254.931
+ 65  TIM3e         4089.739     44  8267.478     8273.079     8470.879
+ 66  TIM3e+ASC     3459.656     44  7007.312     7012.913     7210.713
+ 67  TIM3e+G4      4090.018     45  8270.035     8275.899     8478.058
+ 68  TIM3e+ASC+G4  3459.657     45  7009.314     7015.178     7217.337
+ 69  TIM3+F        4090.546     47  8275.093     8281.502     8492.361
+ 70  TIM3+F+ASC    3462.090     47  7018.179     7024.588     7235.448
+ 71  TIM3+F+G4     4090.818     48  8277.636     8284.328     8499.528
+ 72  TIM3+F+ASC+G4 3462.090     48  7020.181     7026.872     7242.072
+ 73  TVMe          4084.088     45  8258.176     8264.040     8466.200
+ 74  TVMe+ASC      3456.152     45  7002.305     7008.169     7210.328
+ 75  TVMe+G4       4084.366     46  8260.732     8266.866     8473.378
+ 76  TVMe+ASC+G4   3456.153     46  7004.307     7010.440     7216.953
+ 77  TVM+F         4082.811     48  8261.622     8268.313     8483.513
+ 78  TVM+F+ASC     3455.181     48  7006.361     7013.052     7228.252
+ 79  TVM+F+G4      4083.083     49  8264.166     8271.146     8490.680
+ 80  TVM+F+ASC+G4  3455.182     49  7008.363     7015.343     7234.877
+ 81  SYM           4083.548     46  8259.096     8265.229     8471.742
+ 82  SYM+ASC       3455.310     46  7002.620     7008.753     7215.265
+ 83  SYM+G4        4083.826     47  8261.652     8268.062     8478.921
+ 84  SYM+ASC+G4    3455.311     47  7004.622     7011.031     7221.890
+ 85  GTR+F         4082.705     49  8263.411     8270.391     8489.925
+ 86  GTR+F+ASC     3455.161     49  7008.321     7015.301     7234.835
+ 87  GTR+F+G4      4082.976     50  8265.952     8273.228     8497.089
+ 88  GTR+F+ASC+G4  3455.162     50  7010.323     7017.599     7241.460
+Akaike Information Criterion:           TVMe+ASC
+Corrected Akaike Information Criterion: TVMe+ASC
+Bayesian Information Criterion:         K2P+ASC
+Best-fit model: K2P+ASC chosen according to BIC
+
+All model information printed to cholera_haiti.fasta.model.gz
+CPU time for ModelFinder: 4.845 seconds (0h:0m:4s)
+Wall-clock time for ModelFinder: 4.944 seconds (0h:0m:4s)
+Generating 1000 samples for ultrafast bootstrap (seed: 46753)...
+
+NOTE: 0 MB RAM (0 GB) is required!
+Estimate model parameters (epsilon = 0.100)
+1. Initial log-likelihood: -3635.612
+2. Current log-likelihood: -3520.779
+3. Current log-likelihood: -3463.435
+Optimal log-likelihood: -3463.315
+Rate parameters:  A-C: 1.00000  A-G: 3.96160  A-T: 1.00000  C-G: 1.00000  C-T: 3.96160  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 3 rounds (0.007 sec)
+Computing ML distances based on estimated model parameters... 0.003 sec
+Computing BIONJ tree...
+0.024 seconds
+Log-likelihood of BIONJ tree: -3474.905
+--------------------------------------------------------------------
+|             INITIALIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Generating 98 parsimony trees... 0.134 second
+Computing log-likelihood of 98 initial trees ... 0.201 seconds
+Current best score: -3463.315
+
+Do NNI search on 20 best initial trees
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 1: -3462.634
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 2: -3462.583
+Iteration 10 / LogL: -3465.886 / Time: 0h:0m:1s
+Iteration 20 / LogL: -3465.937 / Time: 0h:0m:2s
+Finish initializing candidate tree set (18)
+Current best tree score: -3462.583 / CPU time: 2.564
+Number of iterations: 20
+--------------------------------------------------------------------
+|               OPTIMIZING CANDIDATE TREE SET                      |
+--------------------------------------------------------------------
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 25: -3462.519
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 29: -3462.416
+Iteration 30 / LogL: -3462.506 / Time: 0h:0m:3s (0h:0m:12s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -3462.393
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 32: -3462.353
+Estimate model parameters (epsilon = 0.100)
+BETTER TREE FOUND at iteration 40: -3462.325
+Iteration 40 / LogL: -3462.325 / Time: 0h:0m:4s (0h:0m:11s left)
+Estimate model parameters (epsilon = 0.100)
+UPDATE BEST LOG-LIKELIHOOD: -3462.295
+Iteration 50 / LogL: -3650.086 / Time: 0h:0m:5s (0h:0m:10s left)
+Log-likelihood cutoff on original alignment: -3520.569
+Iteration 60 / LogL: -3462.339 / Time: 0h:0m:6s (0h:0m:8s left)
+Iteration 70 / LogL: -3462.331 / Time: 0h:0m:6s (0h:0m:6s left)
+WARNING: NNI search needs unusual large number of steps (22) to converge!
+Iteration 80 / LogL: -3462.538 / Time: 0h:0m:7s (0h:0m:5s left)
+Iteration 90 / LogL: -3462.348 / Time: 0h:0m:8s (0h:0m:4s left)
+UPDATE BEST LOG-LIKELIHOOD: -3462.292
+WARNING: NNI search needs unusual large number of steps (22) to converge!
+WARNING: NNI search needs unusual large number of steps (22) to converge!
+Iteration 100 / LogL: -3462.389 / Time: 0h:0m:8s (0h:0m:3s left)
+Log-likelihood cutoff on original alignment: -3521.197
+NOTE: Bootstrap correlation coefficient of split occurrence frequencies: 0.997
+Iteration 110 / LogL: -3462.439 / Time: 0h:0m:9s (0h:0m:7s left)
+Iteration 120 / LogL: -3462.409 / Time: 0h:0m:10s (0h:0m:6s left)
+UPDATE BEST LOG-LIKELIHOOD: -3462.286
+Iteration 130 / LogL: -3462.286 / Time: 0h:0m:11s (0h:0m:6s left)
+UPDATE BEST LOG-LIKELIHOOD: -3462.280
+Iteration 140 / LogL: -3462.396 / Time: 0h:0m:11s (0h:0m:5s left)
+TREE SEARCH COMPLETED AFTER 141 ITERATIONS / Time: 0h:0m:12s
+
+--------------------------------------------------------------------
+|                    FINALIZING TREE SEARCH                        |
+--------------------------------------------------------------------
+Performs final model parameters optimization
+Estimate model parameters (epsilon = 0.010)
+1. Initial log-likelihood: -3462.280
+Optimal log-likelihood: -3462.278
+Rate parameters:  A-C: 1.00000  A-G: 3.95651  A-T: 1.00000  C-G: 1.00000  C-T: 3.95651  G-T: 1.00000
+Base frequencies:  A: 0.250  C: 0.250  G: 0.250  T: 0.250
+Parameters optimization took 1 rounds (0.002 sec)
+BEST SCORE FOUND : -3462.278
+
+Testing tree branches by SH-like aLRT with 1000 replicates...
+0.300 sec.
+Creating bootstrap support values...
+Split supports printed to NEXUS file cholera_haiti.fasta.splits.nex
+Total tree length: 0.025
+
+Total number of iterations: 141
+CPU time used for tree search: 11.312 sec (0h:0m:11s)
+Wall-clock time used for tree search: 11.826 sec (0h:0m:11s)
+Total CPU time used: 11.752 sec (0h:0m:11s)
+Total wall-clock time used: 12.439 sec (0h:0m:12s)
+
+Computing bootstrap consensus tree...
+Reading input file cholera_haiti.fasta.splits.nex...
+22 taxa and 103 splits.
+Consensus tree written to cholera_haiti.fasta.contree
+Reading input trees file cholera_haiti.fasta.contree
+Log-likelihood of consensus tree: -3462.463
+
+Analysis results written to: 
+  IQ-TREE report:                cholera_haiti.fasta.iqtree
+  Maximum-likelihood tree:       cholera_haiti.fasta.treefile
+  Likelihood distances:          cholera_haiti.fasta.mldist
+
+Ultrafast bootstrap approximation results written to:
+  Split support values:          cholera_haiti.fasta.splits.nex
+  Consensus tree:                cholera_haiti.fasta.contree
+  Screen log file:               cholera_haiti.fasta.log
+
+Date and Time: Mon Aug  5 10:04:17 2019

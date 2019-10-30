@@ -1,0 +1,36 @@
+#nexus
+
+BEGIN Taxa;
+DIMENSIONS ntax=8;
+TAXLABELS
+[1] 'FJ750957_Marburg_virus'
+[2] 'FJ750953_Ravn_virus'
+[3] 'MH121169.1_Sudan_ebolavirus'
+[4] 'KT357840_Zaire_Ebolavirus'
+[5] 'My_sample_DRCongo_2017_outbreak'
+[6] 'KT725373_Zaire_ebolavirus'
+[7] 'KC545395_Bundibugyo_ebolavirus'
+[8] 'KU182910.1_TaiForest_ebolavirus'
+;
+END; [Taxa]
+
+BEGIN Splits;
+DIMENSIONS ntax=8 nsplits=13;
+FORMAT labels=no weights=yes confidences=no intervals=no;
+MATRIX
+	100	 2,
+	100	 3,
+	100	 7,
+	100	 8,
+	100	 7 8,
+	100	 3 7 8,
+	100	 4,
+	100	 6,
+	100	 4 6,
+	100	 5,
+	100	 4 5 6,
+	100	 1 2,
+	100	 1,
+;
+END; [Splits]
+
